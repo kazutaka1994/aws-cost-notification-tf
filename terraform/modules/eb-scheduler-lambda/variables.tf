@@ -1,0 +1,10 @@
+variable "scheduler_role_name" {}
+variable "schdeuler_policy_name" {}
+variable "scheduler_name" {}
+variable "scheduler_state" {}
+variable "schedule_expression" {}
+variable "schedule_expression_tz" {}
+variable "flexible_time_window" {}
+variable "scheduler_target_arn" {}
+variable "maximum_retry_attempts" {}
+variable "maximum_event_age_in_seconds" {}
