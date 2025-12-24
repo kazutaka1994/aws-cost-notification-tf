@@ -1,0 +1,37 @@
+directory:
+  - ../terraform/modules/cost-notification
+
+framework:
+  - terraform
+
+external-checks-dir:
+  - ./checks
+
+skip-check: [
+  "CKV_AWS_50",
+  "CKV_AWS_51",
+  "CKV_AWS_116",
+  "CKV_AWS_117",
+  "CKV_AWS_119",
+  "CKV_AWS_136",
+  "CKV_AWS_158",
+  "CKV_AWS_272",
+  "CKV_AWS_297",
+]
+
+output: cli
+
+# Only show failed checks
+compact: true
+
+# Suppress passed checks in output
+quiet: true
+
+# Download external modules
+download-external-modules: false
+
+# Exit code 0 even if checks fail
+soft-fail: false
+
+# Show file paths relative to this directory
+repo-root-for-plan-enrichment: ../terraform
